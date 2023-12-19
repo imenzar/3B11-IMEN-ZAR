@@ -1,24 +1,68 @@
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Expériences</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expériences</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        
+        p {
+            line-height: 1.5;
+        }
+    </style>
+	
+	
+	<script>
+        window.onload = function() {
+            alert("Bienvenue sur la page d'expériences !");
+        };
+        document.addEventListener("DOMContentLoaded", function() {
+            var section = document.getElementById("Professional_exp");
+            var paragraph = section.querySelector("p");
+
+            section.addEventListener("mouseover", function() {
+                paragraph.style.color = "blue";
+            });
+
+            section.addEventListener("mouseout", function() {
+                paragraph.style.color = ""; // Réinitialise la couleur
+            });
+        });
+   
+    </script>
+	
+	
 </head>
 <body>
-<header>
-<center>
-<img src="image.gpj" width="500" height="400" > 
-</center>
+    <section id="Professional_exp" class="Professional_exp">
+        <p>
+            Pendant mes deux dernières années en classe préparatoire, le rythme intense d'études ne m'a pas permis de participer à des clubs ou de m'engager dans des expériences en informatique ou dans d'autres domaines.
+        </p> 
+    </section>
 
-</header>
-
-
-<section id="Professional_exp" class="Professional_exp">
-
-<p>2 ans preparatoire </p> 
-
-</section>
-
-<footer><b>ezzar imen en 2023</b></footer>
+    <footer><b>ezzar imen en 2023</b></footer>
 </body>
 </html>

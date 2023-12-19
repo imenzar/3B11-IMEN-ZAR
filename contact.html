@@ -1,27 +1,44 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
 </head>
 <body>
-<header>
-<center>
-<img src="image.jpg" width="500" height="400" > 
-</center>
+    <header>
+        <center>
+            <img src="contact.jpg" width="300" height="300" alt="Contact Image"> 
+        </center>
+    </header>
 
-</header>
+    <section id="ContactMe" class="ContactMe">
+        <h2 class="ContactMeTitle">Contact me:</h2>
+        <hr>
+        <h3><u>Phone Number:</u></h3>
+        <p class="ContactInfo">+216-50-714-625</p>
 
+        <h3><u>Email:</u></h3>
+        <p class="ContactInfo" id="emailInfo">imen.ezzar@esprit.tn</p>
 
-<section id="Contact me" class="Contact me">
-<h2 class="Contact me title">Contact me:</h2>
-<hr>
-<h3>phone Number:</h2> +216-50-714-625 <br>
-<h3>Email:</h3> imen.ezzar@esprit.tn <br>
-<h3>country:</h3>monastire ,bekalta<br>
-<h3>facebook:</h2> imen ezzar <br>
-</section>
+        <h3><u>Country:</u></h3>
+        <p class="ContactInfo">Monastir-Bekalta</p>
 
-<footer><b>imen ezzar  en 2023</b></footer>
+        <h3><u>Facebook:</u></h3>
+        <p class="ContactInfo">imen zar</p>
+    </section>
+
+    <footer><b>imen ezzar en 2023</b></footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var emailParagraph = document.getElementById("emailInfo");
+
+            emailParagraph.addEventListener("click", function() {
+                alert("Adresse e-mail cliquée : " + emailParagraph.textContent);
+            });
+        });
+    </script>
 </body>
 </html>
